@@ -14,11 +14,6 @@
     src: url("./fonts/Kanit/Kanit-Regular.ttf");
 }
 
-@font-face {
-    font-family: "Nova Mono";
-    src: url("./fonts/Nova_Mono/NovaMono-Regular.ttf");
-}
-
 :root {
 
     --outline: rgb(32, 192, 16);
