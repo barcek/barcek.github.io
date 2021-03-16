@@ -12,34 +12,38 @@
 
         <title>barcek | solves problems</title>
 
-        <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgICAgICAgICAgIDxzdHlsZT4KICAgICAgICAgICAgICAgIC53YXJtIHsgZmlsbDogcmdiKDI0OCwgMCAsIDY0KTsgfQogICAgICAgICAgICAgICAgLmNvb2wgeyBmaWxsOiByZ2IoMTY4LCAwLCAyNTUpOyB9CiAgICAgICAgICAgIDwvc3R5bGU+CiAgICAgICAgICAgIDxwYXRoIGNsYXNzPSJ3YXJtIiBkPSJNMywyIEw2LDIgUTcsMiA3LDMgTDcsMTMgUTcsMTQgNiwxNCBMMywxNCBRMiwxNCAyLDEzIEwyLDMgUTIsMiAzLDIiLz4KICAgICAgICAgICAgPHBhdGggY2xhc3M9ImNvb2wiIGQ9Ik0xMCwyIEwxMywyIFExNCwyIDE0LDMgTDE0LDEzIFExNCwxNCAxMywxNCBMMTAsMTQgUTksMTQgOSwxMyBMOSwzIFE5LDIgMTAsMiIvPgogICAgICAgICAgICA8IS0tCiAgICAgICAgICAgIDxwYXRoIGNsYXNzPSJjb29sIiBkPSJNOSwyIEwxMiwyIFExMywyIDEzLDMgTDEzLDEzIFExMywxNCAxMiwxNCBMOSwxNCBROCwxNCA4LDEzIEw4LDMgUTgsMiA5LDIiLz4KICAgICAgICAgICAgLS0+CiAgICAgICAgPC9zdmc+">
+        <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgICAgICAgICAgIDxzdHlsZT4KICAgICAgICAgICAgICAgIC53YXJtIHsgZmlsbDogcmdiKDI1NSwgMTYsIDExMik7IH0KICAgICAgICAgICAgICAgIC5jb29sIHsgZmlsbDogcmdiKDE0NCwgNDgsIDIyNCk7IH0KICAgICAgICAgICAgPC9zdHlsZT4KICAgICAgICAgICAgPHBhdGggc3R5bGU9ImZpbGw6bGlnaHRibHVlOyIgZD0iTTQsMyBMMTIsMyBRMTMsMyAxMyw0IEwxMywxMiBRMTMsMTMgMTIsMTMgTDQsMTMgUTMsMTMgMywxMiBMMyw0IFEzLDMgNCwzIi8+CiAgICAgICAgICAgIDwhLS0KICAgICAgICAgICAgPHBhdGggY2xhc3M9ImNvb2wiIGQ9Ik05LDIgTDEyLDIgUTEzLDIgMTMsMyBMMTMsMTMgUTEzLDE0IDEyLDE0IEw5LDE0IFE4LDE0IDgsMTMgTDgsMyBROCwyIDksMiIvPgogICAgICAgICAgICAtLT4KICAgICAgICA8L3N2Zz4=">
         <link rel="stylesheet" href="./style.css">
-        <script src="./script.js" defer></script>
 
     </head>
 
     <body>
 
-        <div class="splash splash--top"></div>
-
         <header>
-            <a href="index.html">
-                <section class="title__frame">
-                    <h1 class="title__name" aria-label="augomate">
-                        barcek
-                    </h1>
-                    <h2 class="title__summary">
-                        solves proble<span class="hidden">m</span><span class="bar bar--small bar--left"></span><span class="bar bar--small bar--right"></span>s
-                    </h2>
-                </section>
-            </a>
-
-            <ul class="menu__list" id="menu" aria-expanded="false">
-                <div class="outline outline--lit theme__outline" tabindex="0" aria-label="theme toggle">
-                    <div class="theme__disc"></div>
-                </div>
+            <ul>
+                <li id="listing-augomate">
+                    <a href="#siteview-augomate">augomate</a>
+                </li>
+                <li id="listing-notes">
+                    <a href="#siteview-notes">notes</a>
+                </li>
             </ul>
         </header>
+
+        <main>
+            <article id="siteview-augomate" class="siteview">
+                <iframe src="https://barcek.github.io/augomate" title="test"></iframe>
+                <a href="https://barcek.github.io/augomate">
+                    <h2>augomate</h2>
+                </a>
+            </article>
+            <article id="siteview-notes" class="siteview">
+                <iframe src="https://barcek.github.io/notes" title="test"></iframe>
+                <a href="https://barcek.github.io/notes">
+                    <h2>notes</h2>
+                </a>
+            </article>
+        </main>
 
         <footer>
             <p>&copy;2021 <a href="https://github.com/barcek">barcek</a></p>
