@@ -46,14 +46,18 @@ body {
 }
 
 a {
+    padding: 0.25rem 0.6rem;
     color: var(--foreground);
     text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 0.25rem;
+    transition: 200ms ease-in-out;
 }
 
 a:focus,
 a:hover {
     outline: none;
-    text-decoration: underline;
+    border: 2px solid var(--foreground);
 }
 
 /* Header */
@@ -62,6 +66,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 2.5vw;
     width: 100%;
     height: 7.5rem;
 }
@@ -101,7 +106,7 @@ main {
 }
 
 .siteview > a {
-    padding: 5vw;
+    margin: 5vw;
 }
 
 #siteview-augomate > a > h2 {
@@ -134,6 +139,17 @@ footer {
 footer > p {
     font-size: 0.7rem;
     text-align: center;
+}
+
+footer > p > a {
+    padding: 0;
+    border: none;
+}
+
+footer > p > a:focus,
+footer > p > a:hover {
+    font-weight: bold;
+    border: none;
 }
 
 @media screen and (min-width: 450px) {
