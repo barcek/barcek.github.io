@@ -1,219 +1,217 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
 @font-face {
-    font-family: "Montserrat Subrayada";
-    src: url("./fonts/Montserrat_Subrayada/MontserratSubrayada-Regular.ttf");
+  font-family: "Montserrat Subrayada";
+  src: url("./fonts/Montserrat_Subrayada/MontserratSubrayada-Regular.ttf");
 }
 
 :root {
-
-    --background: black;
-    --foreground: white;
+  --background: black;
+  --foreground: white;
 }
 
 @media screen and (prefers-color-scheme: dark) {
 
-    :root {
-
-        --background: black;
-        --foreground: white;
-    }
+  :root {
+    --background: black;
+    --foreground: white;
+  }
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    background-color: var(--background);
-    font-family: "Montserrat", "Arial", sans-serif;
-    color: var(--foreground);
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background);
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: var(--foreground);
+  overflow-x: hidden;
 }
 
 a {
-    padding: 0.25rem 0.6rem;
-    color: var(--foreground);
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-radius: 0.25rem;
-    transition: 200ms ease-in-out;
+  padding: 0.25rem 0.6rem;
+  color: var(--foreground);
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  transition: 200ms ease-in-out;
 }
 
 a:focus,
 a:hover {
-    outline: none;
-    border: 2px solid var(--foreground);
+  outline: none;
+  border: 2px solid var(--foreground);
 }
 
 /* Header */
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 3vw;
-    width: 100%;
-    height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 3vw;
+  width: 100%;
+  height: 7.5rem;
 }
 
 header > ul {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  list-style: none;
 }
 
 header > ul > li {
-    display: inline-block;
-    padding: 1rem;
-    font-size: 1.5rem;
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 #listing-augomate {
-    font-family: "Montserrat Subrayada", "Arial", sans-serif;
+  font-family: "Montserrat Subrayada", "Arial", sans-serif;
 }
 
 #listing-notes {
-    font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 
 /* Iframes */
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 .siteview {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vw;
 }
 
 .siteview > a {
-    margin: 5vw;
+  margin: 5vw;
 }
 
 #augomate > a > h2 {
-    font-family: "Montserrat Subrayada", "Arial", sans-serif;
+  font-family: "Montserrat Subrayada", "Arial", sans-serif;
 }
 
 #notes > a > h2 {
-    font-family: "Montserrat", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 
 iframe {
-    width: 90vw;
-    height: 90vw;
-    border: none;
-    border-radius: 0.5rem;
+  width: 90vw;
+  height: 90vw;
+  border: none;
+  border-radius: 0.5rem;
 }
 
 /* Footer */
 
 footer {
-    position: relative;
-    flex: 0;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
+  position: relative;
+  flex: 0;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
 }
 
 footer > p {
-    font-size: 0.7rem;
-    text-align: center;
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 footer > p > a {
-    padding: 0.05rem 0.1rem;
-    border: 1px solid transparent;
+  padding: 0.05rem 0.1rem;
+  border: 1px solid transparent;
 }
 
 footer > p > a:focus,
 footer > p > a:hover {
-    border: 1px solid var(--foreground);
+  border: 1px solid var(--foreground);
 }
 
 @media screen and (min-width: 450px) {
 
-    iframe {
-        height: 80vw;
-    }
+  iframe {
+    height: 80vw;
+  }
 
-    footer > p {
-        font-size: 0.8rem;
-    }
+  footer > p {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
 
-    iframe {
-        height: 70vw;
-    }
+  iframe {
+    height: 70vw;
+  }
 
-    footer > p {
-        font-size: 0.9rem;
-    }
+  footer > p {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 750px) {
 
-    iframe {
-        height: 60vw;
-    }
+  iframe {
+    height: 60vw;
+  }
 
-    footer > p {
-        font-size: 1rem;
-    }
+  footer > p {
+    font-size: 1rem;
+  }
 
-    header > ul > li {
-        padding: 1.5rem;
-        font-size: 1.75rem;
-    }
+  header > ul > li {
+    padding: 1.5rem;
+    font-size: 1.75rem;
+  }
 }
 
 @media screen and (min-width: 900px) {
 
-    iframe {
-        height: 50vw;
-    }
+  iframe {
+    height: 50vw;
+  }
 
-    header {
-        height: 11rem;
-        padding: 1.5rem 6vw;
-    }
+  header {
+    height: 11rem;
+    padding: 1.5rem 6vw;
+  }
 
-    header > ul > li {
-        padding: 1.75rem;
-        font-size: 2rem;
-    }
+  header > ul > li {
+    padding: 1.75rem;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
 
-    * {
-        transition: none;
-        animation: none;
-    }
+  * {
+    transition: none;
+    animation: none;
+  }
 
-    html {
-        scroll-behavior: auto;
-    }
+  html {
+    scroll-behavior: auto;
+  }
 }
