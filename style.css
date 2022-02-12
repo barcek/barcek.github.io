@@ -100,7 +100,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vw;
+  padding: 5vw 7.5vw 5vw 7.5vw;
 }
 
 .siteview > a {
@@ -116,7 +116,7 @@ main {
 }
 
 iframe {
-  width: 90vw;
+  width: 85vw;
   height: 90vw;
   border: none;
   border-radius: 0.5rem;
@@ -152,7 +152,7 @@ footer > p > a:hover {
 @media screen and (min-width: 450px) {
 
   iframe {
-    height: 80vw;
+    height: 75vw;
   }
 
   footer > p {
@@ -163,7 +163,7 @@ footer > p > a:hover {
 @media screen and (min-width: 600px) {
 
   iframe {
-    height: 70vw;
+    height: 65vw;
   }
 
   footer > p {
@@ -174,7 +174,7 @@ footer > p > a:hover {
 @media screen and (min-width: 750px) {
 
   iframe {
-    height: 60vw;
+    height: 55vw;
   }
 
   footer > p {
@@ -190,7 +190,7 @@ footer > p > a:hover {
 @media screen and (min-width: 900px) {
 
   iframe {
-    height: 50vw;
+    height: 45vw;
   }
 
   header {
