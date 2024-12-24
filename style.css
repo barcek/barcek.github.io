@@ -100,6 +100,7 @@ article {
 
 article > section.sites {
   margin-bottom: 3vw;
+  padding: 4vw;
 }
 
 article > a {
@@ -121,8 +122,9 @@ article > a {
 
 iframe {
   width: 100%;
-  height: 210vw;
-  padding: 12vw;
+  height: 150vw;
+  padding: 3px;
+  background: linear-gradient(135deg, #aaa, #555);
   border: none;
   border-radius: 0.5rem;
 }
@@ -160,9 +162,12 @@ footer > p > a:hover {
 
 @media screen and (min-width: 450px) {
 
-  iframe {
-    height: 170vw;
+  article > section.sites {
     padding: 8vw;
+  }
+
+  iframe {
+    height: 130vw;
   }
 
   footer > p {
@@ -173,7 +178,7 @@ footer > p > a:hover {
 @media screen and (min-width: 600px) {
 
   iframe {
-    height: 130vw;
+    height: 110vw;
   }
 
   footer > p {
@@ -183,9 +188,13 @@ footer > p > a:hover {
 
 @media screen and (min-width: 750px) {
 
+  article > section.sites {
+    padding: 0vw;
+  }
+
   iframe {
     height: 60vw;
-    padding: 0vw;
+    border-radius: 1vw;
   }
 
   footer > p {
